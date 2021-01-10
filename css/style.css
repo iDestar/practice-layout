@@ -440,3 +440,55 @@ figure {
 .places__card_card_size_sm {
   grid-column: span 2;
 }
+
+.tours {
+  margin-bottom: 139px;
+}
+
+.tours__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.tour__info {
+  padding-left: 47px;
+}
+
+.tour__title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 85px;
+}
+
+.tour__desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+
+.tour__more {
+  padding-right: 59px;
+  color: #006dfe;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  background: url(/img/shape.svg) no-repeat right center;
+  transition: 0.2s;
+}
+
+.tour__more:hover,
+.tour__more:focus {
+  opacity: 0.65;
+}
+
+top {
+  margin-bottom: 86px;
+}
+
+.top_title {
+  margin-bottom: 54px;
+}
