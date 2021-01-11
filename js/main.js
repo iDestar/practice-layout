@@ -14,8 +14,6 @@
   const headerBurger = document.querySelector('.header__burger');
   const headerNavClose = document.querySelector('.header__nav-close');
 
-  console.log(headerNavClose);
-
   headerBurger.addEventListener('click', function () {
     headerNav.classList.add('header__nav_active');
   });
