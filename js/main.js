@@ -13,6 +13,7 @@
   const headerNav = document.querySelector('.header__nav');
   const headerBurger = document.querySelector('.header__burger');
   const headerNavClose = document.querySelector('.header__nav-close');
+  const menuLinks = document.querySelectorAll('.header__link');
 
   headerBurger.addEventListener('click', function () {
     headerNav.classList.add('header__nav_active');
@@ -21,6 +22,14 @@
   headerNavClose.addEventListener('click', function () {
     headerNav.classList.remove('header__nav_active');
   });
+
+  if (window.innerWidth < 768) {
+    menuLinks.forEach((el) => {
+      el.addEventListener('click', () => {
+        headerNav.classList.remove('header__nav_active');
+      });
+    });
+  }
 })();
 
 (function () {
